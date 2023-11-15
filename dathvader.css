@@ -1,0 +1,114 @@
+
+
+@media only screen and (min-width: 600px) {
+    #container {
+    height: 1000px;
+    display:grid;
+     grid-template-areas:
+    'header header header header'
+    'menu menu main main'
+    'destra destra destra destra'
+    'footer footer footer footer';
+    }
+    #menu li {
+        float: left;
+         list-style-type: none;
+         }
+         #menu li a {
+         display: block;
+         padding: 5px;
+         }
+    #c1 {
+    background-color: antiquewhite;
+    grid-area: header;
+    text-align: center;
+    }
+    #c2 {
+    background-color: rgb(215, 241, 250);
+    grid-area: menu;
+    } 
+    #c3 {
+    background-color: rgb(236, 24, 236);
+    grid-area: main;
+    }
+    #c4 {
+    background-color: rgb(218, 250, 215);
+    grid-area: destra;
+    }
+    #c5 {
+    background-color: rgb(172, 172, 52);
+    grid-area: footer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: black 5px solid;
+    }
+    p{
+    display: flexbox;
+    max-width: 100%;
+    }
+    #c5 img{ 
+    width: 10%;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    padding: 5px; 
+    height: 80%;
+    } 
+    #c4 img{
+        max-width: 40%;
+        }
+      h1 {
+        text-shadow: 2px 2px 4px rgb(5, 190, 169);
+      }
+     }
+        
+     @media screen and (max-width: 600px) {
+        #container {
+            height: 1000px;
+            display:grid;
+             grid-template-areas:
+            'header header header'
+            'menu menu main'
+            'destra destra destra'
+            'footer footer footer';
+            }
+            #c1 {
+            background-color: antiquewhite;
+            grid-area: header;
+            text-align: center;
+            }
+            #c2 {
+            background-color: rgb(215, 241, 250);
+            grid-area: menu;
+            } 
+            #c3 {
+            background-color: rgb(236, 24, 236);
+            grid-area: main;
+            }
+            #c4 {
+                background-color: rgb(218, 250, 215);
+                grid-area: destra;
+                }
+                #c5 {
+                background-color: rgb(172, 172, 52);
+                grid-area: footer;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border: black 5px solid;
+                }
+                p{
+                    display: flexbox;
+                    max-width: 100%;
+                    }
+                #c5 img{ 
+                    width: 10%;
+                    border: 1px solid #ddd; 
+                    border-radius: 4px; 
+                    padding: 5px; 
+                    height: 40%;     
+                                                   
+     }
+     #c4 img{
+        max-width: 40%;
+        } 
+           h1 {
+        text-shadow: 2px 2px 4px rgb(5, 190, 169);
+      }
+    }    
